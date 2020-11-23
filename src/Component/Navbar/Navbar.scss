@@ -1,9 +1,32 @@
-.tes{
-    background-color: blue;
-    margin: 0;
-    padding: 0;
+@import '../../Assets/var/color';
+@import '../../Assets/var/font';
+@import '../../Assets/var/med-query';
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
     
-    &_p{
-        color: red;
+    &__logo{
+        h4{
+            @extend %font-8;
+        }
     }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        list-style: none;
+        top: 0;
+        right: 0;
+        background-color: #363e40ee;
+        height: 100vh;
+        align-items: center;
+        width: 50%;
+        justify-content: space-evenly;
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+        transition: all .8s;
+    }
+
 }

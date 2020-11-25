@@ -1,9 +1,14 @@
+import React from 'react';
 import Navbar from '../src/Component/Navbar/Navbar.jsx'
+import Hero from '../src/Component/Hero/Hero.jsx'
 import './App.css'
 
 function App() {
   return (
-    <Navbar/>
+    <React.Fragment>
+      <Navbar/>
+      <Hero/>
+    </React.Fragment>
   );
 }
 

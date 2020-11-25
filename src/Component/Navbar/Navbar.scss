@@ -7,11 +7,11 @@
   justify-content: space-between;
   align-items: center;
   padding: .5em;
-  background-color: $color2;
   
   &__pict{
-    width: 30px;
-    padding-top: 3px;
+    width: 40px;
+    padding-top: 5px;
+    margin-left: 10px;
   }
 
   &__menu{
@@ -19,7 +19,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-60%, 60%);
+    transform: translate(-70%, 90%);
     cursor: pointer;
   }
   
@@ -27,7 +27,7 @@
     span{
       transition: .5s;
       display: block;
-      background-color: $color1;
+      background-color: $color2;
       height: 4px;
       width: 24px;
       border-radius: 3px;
@@ -40,7 +40,7 @@
     span{
       transition: .5s;
       display: block;
-      background-color: rgb(201, 201, 201);
+      background-color: #4491c4;
       height: 4px;
       width: 24px;
       border-radius: 3px;
@@ -59,13 +59,13 @@
 
 &__items{
   overflow-x: hidden;
-  padding-top: 1em;
+  padding-top: 3em;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   height: 100vh;
   position: absolute;
-  top: 50px;
+  top: 0;
   left: -100%;
   opacity: 1;
   transition: all 1s ease;

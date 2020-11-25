@@ -1,27 +1,37 @@
-import React from 'react';
 import './Navbar.scss';
+import {Component} from 'react';
+import {MenuItems} from './Menuitems'
+import logo from '../../Assets/img/logo.png'
 
-const Navbar = () => {
+export default class Navbar extends Component {
+    state ={ click : false}
+
+    HandleClick = () =>{
+        this.setState({ click : !this.state.click})
+    }
+render(){
     return(
-        <div className="navbar">
-            <div className="navbar__logo">
-                <h4> Portofolio </h4>
+        <nav className="navbar">
+            <span className="navbar__logo">
+                <img src={logo} alt="Logo" className="navbar__pict"/>
+            </span>
+            <div className="navbar__menu" onClick={this.HandleClick}>
+                <div className={this.state.click ? 'navbar__hamburger2' : 'navbar__hamburger1'}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <ul className="navbar__list">
-                <li className="navbar__item"><a href="#"> About </a></li>
-                <li className="navbar__item"><a href="#"> Skills </a></li>
-                <li className="navbar__item"><a href=""> Recent Works </a></li>
-                <li className="navbar__item"><a href="#"> Service </a></li>
-                <li className="navbar__item"><a href="#"> Achievement </a></li>  
+            <ul className={this.state.click ? 'navbar__items active' : 'navbar__items'}>
+                {MenuItems.map((items, index) => {
+                    return(
+                <li key={index}>
+                    <a className={items.ClassName} href={items.url}>
+                        {items.title}
+                    </a>
+                </li>
+                    )})}
             </ul>
-            <div className="navbar__toggle">
-                <input type="checkbox"/>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+        </nav>
     )
-}
-
-export default Navbar;
+}}

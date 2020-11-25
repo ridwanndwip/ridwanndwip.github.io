@@ -19,7 +19,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-130%, 60%);
+    transform: translate(-60%, 60%);
     cursor: pointer;
   }
   
@@ -58,20 +58,21 @@
 }
 
 &__items{
-  padding-top: 2.3em;
+  overflow-x: hidden;
+  padding-top: 1em;
   display: flex;
   flex-direction: column;
   width: 50%;
   height: 100vh;
   position: absolute;
   top: 50px;
-  right: -100%;
+  left: -100%;
   opacity: 1;
   transition: all 1s ease;
 }
 &__items.active{
   background-color: $color2;
-  right: -6%;
+  left: 0;
   opacity: 1;
   transition: all .5s ease;
   z-index: 1;
@@ -84,13 +85,16 @@
   width: 100%;
   display: table;
   color: $color1;
-  @extend %font-4;
-  font-size: 1.1em;
+  @extend %font-5;
+  font-size: .8em;
 
 &:hover{
   background-color: $color3;
 }
 &:active{
+  background-color: $color3;
+}
+&:focus{
   background-color: $color3;
 }
 }
@@ -137,6 +141,11 @@
         transform: scale(.8);
       }
       &:active{
+        color: #22323f;
+        background-color: #e2e2e2;
+        transform: scale(.8);
+      }
+      &:focus{
         color: #22323f;
         background-color: #e2e2e2;
         transform: scale(.8);

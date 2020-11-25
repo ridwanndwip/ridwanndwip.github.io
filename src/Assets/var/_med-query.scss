@@ -13,19 +13,19 @@ $extra-large:1224px;
         }
     }
 
-    @if $breakpoint==s {
+    @if $breakpoint==sm {
         @media (min-width: $small) {
             @content;
         }
     }
 
-    @if $breakpoint==m {
+    @if $breakpoint==md {
         @media (min-width: $medium) {
             @content;
         }
     }
 
-    @if $breakpoint==l {
+    @if $breakpoint==lg {
         @media (min-width: $large) {
             @content;
         }

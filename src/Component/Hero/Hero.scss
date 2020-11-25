@@ -8,6 +8,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    @include responsive(md){
+        margin-top: 5.5em;
+    }
 
     &__caption{
         display: flex;
@@ -17,12 +20,19 @@
         span:nth-child(1){
             @extend %font-7;
             font-size: 1.8em;
+            @include responsive(lg){
+                font-size: 2.5em;
+            }
         }
     }
 
     &__pict{
         margin-top: 1.5em;
-        width: 50%;
+        width: 10em;
+        @include responsive(md){
+            width: 15em;
+            margin-top: 2em;
+        }
     }
 
     &__mouse{

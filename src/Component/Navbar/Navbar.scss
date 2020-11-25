@@ -79,32 +79,37 @@
 }
 
 &__link{
-  text-decoration: none;
-  text-align: center;
-  padding: 2rem;
-  width: 100%;
-  display: table;
-  color: $color1;
-  @extend %font-5;
-  font-size: .8em;
+    text-decoration: none;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    color: $color1;
+    @extend %font-6;
+    font-size: .7em;
 
-&:hover{
-  background-color: $color3;
-}
-&:active{
-  background-color: $color3;
-}
-&:focus{
-  background-color: $color3;
-}
+  &:hover{
+    background-color: $color3;
+  }
+  &:active{
+    background-color: $color3;
+  }
+  &:focus{
+    background-color: $color3;
+  }
 }
   
 }
 
-@include responsive(m) {
+@include responsive(md) {
   .navbar{
-    margin: .4em 4em auto 4em;
+    margin: .4em 2em auto 2em;
     background: transparent;
+
+    @include responsive(lg){
+      margin: .4em 4em auto 4em;
+    }
+
     &__menu{
       display: none;
     }

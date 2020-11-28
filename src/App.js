@@ -4,6 +4,7 @@ import Hero from '../src/Component/Hero/Hero.jsx'
 import About from '../src/Component/About/About.jsx'
 // import Skills from '../src/Component/Skills/Skills.jsx'
 import RecentWorks from '../src/Component/RecentWorks/RecentWorks.jsx'
+import Service from '../src/Component/Service/Service.jsx'
 
 import './App.css'
 
@@ -15,6 +16,7 @@ function App() {
       <About/>
       {/* <Skills/> */}
       <RecentWorks/>
+      <Service/>
     </React.Fragment>
   );
 }

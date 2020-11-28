@@ -1,7 +1,7 @@
 export const MenuItems = [
     {
         title : 'About',
-        url : '#',
+        url : 'about',
         ClassName : 'navbar__link'
     },
     {

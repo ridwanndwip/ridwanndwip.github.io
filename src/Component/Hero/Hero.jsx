@@ -12,8 +12,8 @@ export default function Hero(){
             <span className="hero__caption__2"> Html / Css / JS</span>
         </div>
         <img src={me} alt="#" className="hero__pict"/>
-        <div class="hero__mouse"></div>
-        <p class="hero__text">Scroll</p>
+        <div className="hero__mouse"></div>
+        <p className="hero__text">Scroll</p>
     </div>
     )
 }

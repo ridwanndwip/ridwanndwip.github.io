@@ -2,6 +2,7 @@ import './Navbar.scss';
 import {Component} from 'react';
 import {MenuItems} from './Menuitems'
 import logo from '../../Assets/img/logo.png'
+import {Link} from 'react-scroll';
 
 export default class Navbar extends Component {
     state ={ click : false}
@@ -9,6 +10,7 @@ export default class Navbar extends Component {
     HandleClick = () =>{
         this.setState({ click : !this.state.click})
     }
+
 render(){
     return(
         <nav className="navbar">
@@ -26,9 +28,9 @@ render(){
                 {MenuItems.map((items, index) => {
                     return(
                 <li key={index}>
-                    <a className={items.ClassName} href={items.url}>
+                    <Link className={items.ClassName} to={items.url} smooth={true} duration={800} onClick={this.HandleClick}>
                         {items.title}
-                    </a>
+                    </Link>
                 </li>
                     )})}
             </ul>

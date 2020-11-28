@@ -1,0 +1,144 @@
+@import '../../Assets/var/color';
+@import '../../Assets/var/font';
+@import '../../Assets/var/med-query';
+
+.CardRw {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    color: $color1;
+    @include responsive(md){
+      width: 100%;
+    }
+    &:hover .CardRw__Overlay,
+    &:focus .CardRw__Overlay,
+    &:active .CardRw__Overlay{
+        opacity: 1;
+      }
+
+    &__Overlay{
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.897);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+
+    &__detail {
+        position: absolute;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+
+      &:hover .CardRw__detail,
+      &:focus .CardRw__detail,
+      &:active .CardRw__detail{
+        top: 45%;
+        left: 50%;
+        opacity: 1;
+      }
+      &__detail h3{
+        @extend %font-5;
+        font-size: 23px;
+        letter-spacing: .1em;
+        margin-bottom: .1em;
+        text-shadow: 2px 1px 1.5px grey;
+        @include responsive(xs){
+            font-size: 30px;
+        }
+      }
+      
+      &__detail p{
+        font-size: 10px;
+        margin-bottom: 1em;
+      }
+      
+      &__detail a{
+        color: $color1;
+        background-color: rgb(5, 51, 119);
+        padding: .2em .5em .2em .5em;
+        width: 40%;
+        text-decoration: none;
+        font-size: 13px;
+        @extend %font-4
+      }
+    }
+  .fadeIn-bottom{
+    top: 100%;
+  }
+
+
+.rw{
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $color2;
+    &__title{
+        @extend %font-8;
+        margin-bottom: .6em;
+        font-size: 1.5em;
+        @include responsive(lg){
+          font-size: 2em;
+        }
+    }
+    &__ket{
+        text-align: center;
+        font-size: .8em;
+        padding: 0 2em 0 2em;
+      
+        @include responsive(sm){
+            font-size: 1em;
+        }
+    }
+    &__card{
+        margin-top: 2em;
+        display: grid;
+        gap: 1em;
+        @include responsive(sm){
+          gap: 1.5em;
+          margin-top: 3em;
+        }
+        @include responsive(md){
+          grid-template-columns: repeat(2, 1fr);
+          margin: 3em;
+          gap: 2em;
+        }
+        @include responsive(lg){
+          grid-template-columns: repeat(3, 1fr);
+          margin: 3em;
+          gap: 1.5em;
+        }
+    }
+}
+
+.fadeIn-bottom{
+    top: 80%;
+  }

@@ -1,0 +1,73 @@
+@import '../../Assets/var/color';
+@import '../../Assets/var/font';
+@import '../../Assets/var/med-query';
+
+.Conver{
+    padding: 10em 1em 5em 1em;
+    text-align: center;
+
+    span:nth-child(1){
+        display: block;
+        @extend %font-5;
+        color: $color2;
+        font-size: 17px;
+        @include responsive(xs){
+            font-size: 20px;
+        }
+        @include responsive(sm){
+            font-size: 25px;
+        }
+    }
+    span:nth-child(2){
+        color: $color3;
+        display: block;
+        font-size: 13px;
+        @extend %font-3;
+        margin-top: 2em;
+        @include responsive(xs){
+            font-size: 15px;
+            padding: 0 3em;
+        }
+        @include responsive(sm){
+            font-size: 20px;
+            padding: 0 2em;
+        }
+    }
+    span:nth-child(3){
+        color: $color3;
+        display: block;
+        font-size: 12px;
+        @extend %font-3;
+        margin: 5px 0 2em 0;
+        @include responsive(xs){
+            font-size: 15px;
+        }
+        @include responsive(sm){
+            font-size: 18px;
+        }
+    }
+    a{
+        display: block;
+        margin-top: 10px;
+        color: $color1;
+        text-decoration: none;
+        display: block;
+        background-color: $color2;
+        width: 12em;
+        margin: auto;
+        @extend %font-3;
+        padding: 12px;
+        transition: all .5s ease;
+        border: 2px solid $color1;
+
+        &:hover,
+        &:active,
+        &:focus{
+            border: 2px solid $color2;
+            color: $color3;
+            background-color: $color1;
+            @extend %font-5;
+        }
+    }
+
+}

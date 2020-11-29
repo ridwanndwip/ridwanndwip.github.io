@@ -71,22 +71,22 @@
     @include responsive(lg){
         padding: 0 6rem 0 6rem;
     }
-    &__title{
-        display: block;
-        color: $color2;
-        text-align: center;
-        margin-top: 6rem;
-        @extend %font-8;
-        font-size: 1.875rem;
-        margin-bottom: 1.25rem;
-        @include responsive(sm){
-            margin-top: 8rem;
-        }
-        @include responsive(lg){
-            margin-top: 10rem;
-        }
-        @include responsive(xl){
-            font-size: 2.25rem;
-        }
+}
+.bgservice__title{
+    display: block;
+    color: $color2;
+    text-align: center;
+    margin-top: 6rem;
+    @extend %font-8;
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+    @include responsive(sm){
+        margin-top: 8rem;
+    }
+    @include responsive(lg){
+        margin-top: 10rem;
+    }
+    @include responsive(xl){
+        font-size: 2.25rem;
     }
 }

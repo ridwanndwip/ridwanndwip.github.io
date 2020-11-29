@@ -1,4 +1,4 @@
-import {Component} from 'react';
+import {Component,Fragment} from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -63,8 +63,11 @@ const CardService = (props) => {
           ]
         };
         return (
+          <Fragment>
+          <div className="bgservice">
+            <span className="bgservice__title"> My Service </span>
+          </div>
           <div className="Service" id="service">
-            <span className="Service__title"> My Service </span>
             <Slider {...settings}>
               <div>
                 <CardService img={reactjs} desc="ReactJs Development" title="ReactJs Development" desc2="Develop responsive web designs using reacjs as a framework"/>
@@ -77,6 +80,7 @@ const CardService = (props) => {
               </div>
             </Slider>
           </div>
+          </Fragment>
         );
       }
     }

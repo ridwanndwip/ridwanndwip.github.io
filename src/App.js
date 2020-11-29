@@ -6,6 +6,7 @@ import About from '../src/Component/About/About.jsx'
 import RecentWorks from '../src/Component/RecentWorks/RecentWorks.jsx'
 import Service from '../src/Component/Service/Service.jsx'
 import Footer from '../src/Component/Footer/Footer.jsx'
+import Conversation from '../src/Component/Converstaion/Conversation.jsx'
 
 import './App.css'
 
@@ -18,6 +19,7 @@ function App() {
       {/* <Skills/> */}
       <RecentWorks/>
       <Service/>
+      <Conversation/>
       <Footer/>
     </React.Fragment>
   );

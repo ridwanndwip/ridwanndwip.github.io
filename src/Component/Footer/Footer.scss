@@ -24,14 +24,18 @@
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   
     }
+    @include responsive(md){
+        margin: 5em 9em 0 9em;
+    }
     @include responsive(lg){
-        margin: 5em 12em 0 12em;
+        margin: 5em 15em 0 15em;
     }
     @include responsive(xl){
         margin: 5em 18em 0 18em;
     }
     &__span{
-        font-size: 11px;
+        @extend %font-3;
+        font-size: 13px;
         display: block;
         @include responsive(sm){
             padding: 0 2em;
@@ -39,19 +43,18 @@
         }
         @include responsive(md){
             padding: 0 6em;
+            font-size: 18px;
         }
         @include responsive(lg){
-            padding: 0 7em;
-        }
-        @include responsive(xl){
-            padding: 0 10em;
+            padding: 0 3em;
+            font-size: 20px;
         }
     }
     &__span2{
         display: block;
         margin-top: 5px;
-        font-size: 16px;
-        @extend %font-6;
+        font-size: 15px;
+        @extend %font-5;
     }
 }
 

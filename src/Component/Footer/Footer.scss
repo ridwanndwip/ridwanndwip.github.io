@@ -30,8 +30,8 @@
     @include responsive(xl){
         margin: 5em 18em 0 18em;
     }
-    span{
-        font-size: 12px;
+    &__span{
+        font-size: 11px;
         display: block;
         @include responsive(sm){
             padding: 0 2em;
@@ -46,6 +46,12 @@
         @include responsive(xl){
             padding: 0 10em;
         }
+    }
+    &__span2{
+        display: block;
+        margin-top: 5px;
+        font-size: 16px;
+        @extend %font-6;
     }
 }
 

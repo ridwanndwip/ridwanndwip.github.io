@@ -16,7 +16,7 @@ export default function Footer(){
     return(
         <Fragment>
             <div className="titlefoot">
-                <span className="titlefoot__span"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, voluptatem.</span>
+                <span className="titlefoot__span"> Live to learn n leveling up <br/> <span className="titlefoot__span2">Ridwandwip</span></span>
             </div>
             <div className="footer">
                 <img src={logo} alt="Logo" className="footer__img"/>

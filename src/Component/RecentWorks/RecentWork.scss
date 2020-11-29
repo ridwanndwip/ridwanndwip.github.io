@@ -128,12 +128,12 @@
         }
         @include responsive(md){
           grid-template-columns: repeat(2, 1fr);
-          margin: 3em;
+          margin: 4em;
           gap: 2em;
         }
         @include responsive(lg){
           grid-template-columns: repeat(3, 1fr);
-          margin: 3em;
+          margin: 4em;
           gap: 1.5em;
         }
     }

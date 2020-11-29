@@ -1,0 +1,104 @@
+@import '../../Assets/var/color';
+@import '../../Assets/var/font';
+@import '../../Assets/var/med-query';
+
+
+.titlefoot{
+    background-image: url(../../Assets/img/bgfooter.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 4em;
+    margin: 0 3em 0 3em;
+    margin-top: 5em;
+    border-radius: 15px;
+    text-align: center;
+    color: $color1;
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover,
+    &:focus,
+    &:active{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  
+    }
+    @include responsive(lg){
+        margin: 5em 10em 0 10em;
+    }
+    span{
+        display: block;
+        @include responsive(md){
+            padding: 0 8em;
+        }
+        @include responsive(lg){
+            padding: 0 10em;
+        }
+    }
+}
+
+.footer{
+    background-image: linear-gradient(to top, #0E5F96, #002c8d);
+    margin-top: -6em;
+    text-align: center;
+    &__img{
+        opacity: .7;
+        width: 65px;
+        margin-top: 10em;
+        border-radius: 50%;
+        box-shadow: 0 19px 38px rgba(17, 17, 17, 0.514), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    &__sosmed{
+        margin: 1em 0 3em 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        a{
+            img{
+                width: 38px;
+                padding: 6px;
+                border: 1px solid rgba(255, 255, 255, 0.267);
+                border-radius: 50%;
+                margin: 0 10px;
+                transition: all .2s;
+                &:hover,
+                &:active,
+                &:focus{
+                    border: 2px solid $color2;
+                    background-color: $color2;
+                    transform: scale(1.2);
+                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                }
+            }
+        }
+    }
+    &__copyright{
+        color: $color1;
+        padding-bottom: 2em;
+        span:nth-child(1){
+            display: block;
+            text-align: center;
+            @extend %font-6;
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+        span:nth-child(2){
+            @extend %font-2;
+            display: block;
+            text-align: center;
+        }
+        span:nth-child(3){
+            display: block;
+            text-align: center;
+            @extend %font-4;
+            font-size: 13px;
+            margin-top: 1.5em;
+            img{
+                width: 20px;
+                display: inline;
+                margin-bottom: -6px;
+            }
+        }
+    }
+}

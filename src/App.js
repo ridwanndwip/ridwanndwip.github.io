@@ -5,6 +5,7 @@ import About from '../src/Component/About/About.jsx'
 // import Skills from '../src/Component/Skills/Skills.jsx'
 import RecentWorks from '../src/Component/RecentWorks/RecentWorks.jsx'
 import Service from '../src/Component/Service/Service.jsx'
+import Footer from '../src/Component/Footer/Footer.jsx'
 
 import './App.css'
 
@@ -17,6 +18,7 @@ function App() {
       {/* <Skills/> */}
       <RecentWorks/>
       <Service/>
+      <Footer/>
     </React.Fragment>
   );
 }

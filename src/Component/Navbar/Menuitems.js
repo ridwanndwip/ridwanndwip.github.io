@@ -18,10 +18,5 @@ export const MenuItems = [
         title : 'Service',
         url : '#',
         ClassName : 'navbar__link'
-    },
-    {
-        title : 'Achievement',
-        url : '#',
-        ClassName : 'navbar__link'
     }
 ]

@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    padding: 4em;
+    padding: 2.5em;
     margin: 0 3em 0 3em;
     margin-top: 5em;
     border-radius: 15px;
@@ -25,14 +25,25 @@
   
     }
     @include responsive(lg){
-        margin: 5em 10em 0 10em;
+        margin: 5em 12em 0 12em;
+    }
+    @include responsive(xl){
+        margin: 5em 18em 0 18em;
     }
     span{
+        font-size: 12px;
         display: block;
+        @include responsive(sm){
+            padding: 0 2em;
+            font-size: 15px;
+        }
         @include responsive(md){
-            padding: 0 8em;
+            padding: 0 6em;
         }
         @include responsive(lg){
+            padding: 0 7em;
+        }
+        @include responsive(xl){
             padding: 0 10em;
         }
     }
@@ -40,7 +51,7 @@
 
 .footer{
     background-image: linear-gradient(to top, #0E5F96, #002c8d);
-    margin-top: -6em;
+    margin-top: -5em;
     text-align: center;
     &__img{
         opacity: .7;
@@ -50,7 +61,7 @@
         box-shadow: 0 19px 38px rgba(17, 17, 17, 0.514), 0 15px 12px rgba(0,0,0,0.22);
     }
     &__sosmed{
-        margin: 1em 0 3em 0;
+        margin: 2em 0 3em 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

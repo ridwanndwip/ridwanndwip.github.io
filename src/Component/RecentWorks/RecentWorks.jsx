@@ -17,7 +17,7 @@ const CardRw = ()=> {
 
 export default function RecentWorks(){
     return(
-        <div className="rw">
+        <div className="rw" id="portofolio">
             <h3 className="rw__title"> My Recent Works </h3>
             <span className="rw__ket"> Here are a few web projects and design ui/ux I've worked. Want to see more? Email me. </span>
             <div className="rw__card">

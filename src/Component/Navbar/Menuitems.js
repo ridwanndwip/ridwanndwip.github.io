@@ -10,13 +10,13 @@ export const MenuItems = [
         ClassName : 'navbar__link'
     },
     {
-        title : 'Recent Works',
-        url : '#',
+        title : 'Portofolio',
+        url : 'portofolio',
         ClassName : 'navbar__link'
     },
     {
         title : 'Service',
-        url : '#',
+        url : 'service',
         ClassName : 'navbar__link'
     }
 ]

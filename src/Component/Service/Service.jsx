@@ -63,7 +63,7 @@ const CardService = (props) => {
           ]
         };
         return (
-          <div className="Service">
+          <div className="Service" id="service">
             <span className="Service__title"> My Service </span>
             <Slider {...settings}>
               <div>

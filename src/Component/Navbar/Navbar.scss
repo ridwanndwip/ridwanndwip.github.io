@@ -81,12 +81,12 @@
 &__link{
     text-decoration: none;
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem;
     width: 100%;
     display: table;
     color: $color1;
-    @extend %font-6;
-    font-size: .7em;
+    @extend %font-4;
+    font-size:1em;
     cursor: pointer;
 
   &:hover{

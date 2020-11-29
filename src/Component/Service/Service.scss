@@ -65,28 +65,37 @@
   }
 
 .Service{
+    margin-top: -6em;
     @include responsive(sm){
         padding: 0 4rem 0 4rem;
     }
     @include responsive(lg){
         padding: 0 6rem 0 6rem;
+        margin-top: -8em;
     }
 }
-.bgservice__title{
-    display: block;
-    color: $color2;
-    text-align: center;
-    margin-top: 6rem;
-    @extend %font-8;
-    font-size: 1.875rem;
-    margin-bottom: 1.25rem;
-    @include responsive(sm){
-        margin-top: 8rem;
+
+.bgservice{
+    background-image: linear-gradient(to top, #0E5F96, #002c8d);
+    height: 18em;
+    padding-top: 1em;
+    margin-top: 10em;
+    h1{
+        color: $color1;
+        text-align: center;
+        @extend %font-8;
+        margin-top: 10px;
     }
-    @include responsive(lg){
-        margin-top: 10rem;
-    }
-    @include responsive(xl){
-        font-size: 2.25rem;
+    h4{
+        text-align: center;
+        margin-top: 1em;
+        @extend %font-3;
+        color: $color1;
+        @include responsive(xs){
+            padding: 0 2em;
+        }
+        @include responsive(lg){
+            padding: 0 5em;
+        }
     }
 }

@@ -80,10 +80,10 @@
     height: 18em;
     padding-top: 1em;
     margin-top: 10em;
-    h1{
+    h2{
         color: $color1;
         text-align: center;
-        @extend %font-8;
+        @extend %font-7;
         margin-top: 10px;
     }
     h4{

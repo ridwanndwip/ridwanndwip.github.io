@@ -1,0 +1,68 @@
+@import '../../Assets/var/color';
+@import '../../Assets/var/font';
+@import '../../Assets/var/med-query';
+
+.Skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    .title{
+        text-align: center;
+    }
+}
+
+.button{
+    .tag{
+        background-color: $color1;
+        border: none;
+        margin: 10px;
+        padding: 10px;
+        transition: all .5s;
+        border-radius: 3px;
+        color: $color2;
+        border: 1px solid $color2;
+        cursor: pointer;
+    }
+    
+    .active{
+        color: $color1;
+        background-color: $color3;
+        border: 1px solid $color1;
+    }
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2em;
+    padding: 0 10em;
+
+    .card{
+        color: $color1;
+        border-radius: 15px;
+        padding: 1em;
+        background-color: $color2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .4s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+        &__img{
+            width: 70px;
+            margin-bottom: 1em;
+        }
+        &__title{
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+            font-size: 15px;
+        }
+        &__level{
+            margin-top: 1em;
+            @extend %font-4
+        }
+    }
+}

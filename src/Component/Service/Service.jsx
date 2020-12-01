@@ -64,11 +64,11 @@ const CardService = (props) => {
         };
         return (
           <Fragment>
-          <div className="bgservice">
-            <h1> My Service </h1>
+          <div className="bgservice" id="service">
+            <h2> My Service </h2>
             <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi repellendus tempora, ducimus est soluta.</h4>
           </div>
-          <div className="Service" id="service">
+          <div className="Service">
             <Slider {...settings}>
               <div>
                 <CardService img={reactjs} desc="ReactJs Development" title="ReactJs Development" desc2="Develop responsive web designs using reacjs as a framework"/>

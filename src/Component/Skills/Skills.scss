@@ -7,62 +7,113 @@
     flex-direction: column;
     align-items: center;
     gap: 2em;
+    margin-top: 7em;
+    @include responsive(sm){
+        margin-top: 8em;
+    }
+    @include responsive(lg){
+        margin-top: 10em;
+    }
+    @include responsive(xl){
+        margin-top: 13em;
+    }
 
     .title{
         text-align: center;
-    }
-}
-
-.button{
-    .tag{
-        background-color: $color1;
-        border: none;
-        margin: 10px;
-        padding: 10px;
-        transition: all .5s;
-        border-radius: 3px;
-        color: $color2;
-        border: 1px solid $color2;
-        cursor: pointer;
-    }
-    
-    .active{
-        color: $color1;
-        background-color: $color3;
-        border: 1px solid $color1;
-    }
-}
-
-.content{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 2em;
-    padding: 0 10em;
-
-    .card{
-        color: $color1;
-        border-radius: 15px;
-        padding: 1em;
-        background-color: $color2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: all .4s ease-in-out;
-        &:hover{
-            transform: scale(1.1);
+        color: $color3;
+        @include responsive(sm){
+            padding: 0 3em;
         }
-        &__img{
-            width: 70px;
-            margin-bottom: 1em;
+        @include responsive(md){
+            padding: 0 5em;
         }
-        &__title{
-            border-bottom: 2px solid white;
-            padding-bottom: 5px;
-            font-size: 15px;
+        @include responsive(xl){
+            padding: 0 8em;
         }
-        &__level{
-            margin-top: 1em;
-            @extend %font-4
+        h1{
+            @include responsive(lg){
+                font-size: 2.5em;
+            }
+        }
+        h5{
+            @extend %font-4;
+            padding: 1em 1.5em;
+            @include responsive(sm){
+                font-size: 15px;
+            }
+        }
+    }
+
+    .button{
+        .tag{
+            background-color: $color1;
+            border: none;
+            margin: 10px;
+            padding: 10px;
+            transition: all .5s;
+            border-radius: 3px;
+            color: $color2;
+            border: 1px solid $color2;
+            cursor: pointer;
+        }
+        
+        .active{
+            color: $color1;
+            background-color: $color3;
+            border: 1px solid $color1;
+        }
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2em;
+        padding: 0 1em;
+        @include responsive(sm){
+            grid-template-columns: repeat(3,1fr);
+        }
+        @include responsive(lg){
+            grid-template-columns: repeat(4,1fr);
+        }
+
+        .card{
+            color: $color1;
+            border-radius: 15px;
+            padding: 1em;
+            background-color: $color2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all .4s ease-in-out;
+            @include responsive(xs){
+                padding: 2em;
+            }
+            @include responsive(sm){
+                padding: 1em;
+            }
+            @include responsive(md){
+                padding: 2em;
+            }
+            @include responsive(lg){
+                padding: 2.5em;
+            }
+
+            &:hover{
+                transform: scale(1.1);
+            }
+            &__img{
+                width: 70px;
+                margin-bottom: 1em;
+            }
+            &__title{
+                border-bottom: 2px solid white;
+                padding-bottom: 5px;
+                font-size: 15px;
+            }
+            &__level{
+                margin-top: 1em;
+                @extend %font-4
+            }
         }
     }
 }

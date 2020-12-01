@@ -96,34 +96,45 @@
 
 
 .rw{
-    margin-top: 5em;
+    margin-top: 7em;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: $color2;
-    &__title{
-        @extend %font-8;
-        margin-bottom: .6em;
-        font-size: 1.5em;
-        @include responsive(lg){
-          font-size: 2em;
+    text-align: center;
+          @include responsive(sm){
+            margin-top: 8em;
+            padding: 0 1em;
+          }
+          @include responsive(lg){
+              margin-top: 10em;
+          }
+          @include responsive(xl){
+              margin-top: 13em;
+          }
+        h1{
+            @include responsive(lg){
+                font-size: 2.5em;
+            }
         }
-    }
-    &__ket{
-        text-align: center;
-        font-size: .8em;
-        padding: 0 2em 0 2em;
-      
-        @include responsive(sm){
-            font-size: 1em;
+        h5{
+            @extend %font-4;
+            padding: 1em 1.5em;
+            @include responsive(sm){
+                font-size: 15px;
+            }
+            @include responsive(md){
+              padding: 1em 5em;
+            }
+            @include responsive(xl){
+                padding: 1em 8em;
+            }
         }
-    }
     &__card{
         margin-top: 2em;
         display: grid;
-        gap: 1em;
+        gap: 1.5em;
         @include responsive(sm){
-          gap: 1.5em;
           margin-top: 3em;
         }
         @include responsive(md){

@@ -14,8 +14,8 @@ const images = [
     {id : 10, imageName : 'photoshop.png', tag : 'Design', title : 'Photoshop', level : 'Intermediate'},
     {id : 11, imageName : 'language.png', tag : 'Other', title : 'Indonesia', level : 'Intermediate'},
     {id : 12, imageName : 'language.png', tag : 'Other', title : 'English', level : 'Intermediate'},
-    {id : 13, imageName : 'hardware.png', tag : 'Other', title : 'Hardware & Software', level : 'Intermediate'},
-    {id : 14, imageName : 'hardware.png', tag : 'Other', title : 'Hardware & Software', level : 'Intermediate'},
+    {id : 13, imageName : 'hardware.png', tag : 'Other', title : 'Hardware', level : 'Intermediate'},
+    {id : 14, imageName : 'hardware.png', tag : 'Other', title : 'Software', level : 'Intermediate'},
     {id : 15, imageName : 'office.png', tag : 'Other', title : 'Ms.Office', level : 'Advanced'},
 ]
 
@@ -38,7 +38,7 @@ export default function Skills(){
     return(
         <div className="Skills">
             <div className="title">
-                <h3> Skills </h3>
+                <h1> Skills </h1>
                 <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ad repellat modi amet voluptatem illo praesentium voluptatum consequuntur hic numquam.</h5>
             </div>
             <div className="button">

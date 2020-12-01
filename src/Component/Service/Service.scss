@@ -71,31 +71,37 @@
     }
     @include responsive(lg){
         padding: 0 6rem 0 6rem;
-        margin-top: -8em;
+        margin-top: -5em;
     }
 }
 
 .bgservice{
     background-image: linear-gradient(to top, #0E5F96, #002c8d);
-    height: 18em;
+    height: 15em;
     padding-top: 1em;
-    margin-top: 10em;
-    h2{
-        color: $color1;
-        text-align: center;
-        @extend %font-7;
-        margin-top: 10px;
+    margin-top: 5em;
+    text-align: center;
+    color: $color1;
+    @include responsive(sm){
+        margin-top: 8em;
+        padding: 1em 3em;
     }
-    h4{
-        text-align: center;
-        margin-top: 1em;
-        @extend %font-3;
-        color: $color1;
-        @include responsive(xs){
-            padding: 0 2em;
-        }
+    @include responsive(md){
+        padding: 1em 5em;
+    }
+    @include responsive(xl){
+        padding: 1em 8em;
+    }
+    h1{
         @include responsive(lg){
-            padding: 0 5em;
+            font-size: 2.5em;
         }
+    }
+    h5{
+        @extend %font-4;
+            padding: 1em 1.5em;
+            @include responsive(sm){
+                font-size: 15px;
+            }
     }
 }

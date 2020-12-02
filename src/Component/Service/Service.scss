@@ -65,13 +65,12 @@
   }
 
 .Service{
-    margin-top: -6em;
+    margin-top: -5em;
     @include responsive(sm){
         padding: 0 4rem 0 4rem;
     }
     @include responsive(lg){
         padding: 0 6rem 0 6rem;
-        margin-top: -5em;
     }
 }
 
@@ -79,7 +78,7 @@
     background-image: linear-gradient(to top, #0E5F96, #002c8d);
     height: 15em;
     padding-top: 1em;
-    margin-top: 5em;
+    margin-top: 7em;
     text-align: center;
     color: $color1;
     @include responsive(sm){
@@ -87,10 +86,14 @@
         padding: 1em 3em;
     }
     @include responsive(md){
-        padding: 1em 5em;
+        padding: 1.5em 5em;
+    }
+    @include responsive(lg){
+        margin-top: 10em;
     }
     @include responsive(xl){
-        padding: 1em 8em;
+        padding: 1.5em 8em;
+        margin-top: 15em;
     }
     h1{
         @include responsive(lg){

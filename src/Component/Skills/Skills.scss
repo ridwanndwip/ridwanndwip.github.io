@@ -28,7 +28,7 @@
             padding: 0 5em;
         }
         @include responsive(xl){
-            padding: 0 8em;
+            padding: 0 10em;
         }
         h1{
             @include responsive(lg){
@@ -45,15 +45,15 @@
     }
 
     .button{
+        margin: -2em 0 2em 0;
         .tag{
             background-color: $color1;
             border: none;
             margin: 10px;
             padding: 10px;
             transition: all .5s;
-            border-radius: 3px;
             color: $color2;
-            border: 1px solid $color2;
+            border: 1px solid $color3;
             cursor: pointer;
         }
         
@@ -74,12 +74,13 @@
         }
         @include responsive(lg){
             grid-template-columns: repeat(4,1fr);
+            gap: 3em;
         }
 
         .card{
             color: $color1;
             border-radius: 15px;
-            padding: 1em;
+            padding: 1.5em;
             background-color: $color2;
             display: flex;
             flex-direction: column;
@@ -89,7 +90,7 @@
                 padding: 2em;
             }
             @include responsive(sm){
-                padding: 1em;
+                padding: 1.5em;
             }
             @include responsive(md){
                 padding: 2em;
@@ -104,6 +105,9 @@
             &__img{
                 width: 70px;
                 margin-bottom: 1em;
+                @include responsive(lg){
+                    width: 80px;
+                }
             }
             &__title{
                 border-bottom: 2px solid white;

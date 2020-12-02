@@ -100,7 +100,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: $color2;
+    color: $color3;
     text-align: center;
           @include responsive(sm){
             margin-top: 8em;
@@ -110,7 +110,7 @@
               margin-top: 10em;
           }
           @include responsive(xl){
-              margin-top: 13em;
+              margin-top: 15em;
           }
         h1{
             @include responsive(lg){
@@ -127,7 +127,7 @@
               padding: 1em 5em;
             }
             @include responsive(xl){
-                padding: 1em 8em;
+                padding: 1em 10em;
             }
         }
     &__card{
@@ -135,16 +135,15 @@
         display: grid;
         gap: 1.5em;
         @include responsive(sm){
-          margin-top: 3em;
+          margin-top: 2em;
         }
         @include responsive(md){
           grid-template-columns: repeat(2, 1fr);
-          margin: 4em;
+          margin: 2em;
           gap: 2em;
         }
         @include responsive(lg){
           grid-template-columns: repeat(3, 1fr);
-          margin: 4em;
           gap: 1.5em;
         }
     }

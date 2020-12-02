@@ -13,10 +13,8 @@ In making web design I often use ReactJs as a javascript framework and tailwindc
 I love making open source projects. It helps me learn many new things and add to my portfolio. besides that I also have the ability to work independently and in teams, but still comply with the work rules that have been determined.
             </p>
             <div className="about__getcv">
-                <button>
-                <a href="#"> Get My Cv </a>
-                </button>
-            </div>   
+                <a href="#"> Get My CV </a>
+            </div>
         </div>
     )
 }

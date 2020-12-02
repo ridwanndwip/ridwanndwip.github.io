@@ -3,14 +3,21 @@
 @import '../../Assets/var/med-query';
 
 .Conver{
+    color: $color3;
+    margin-top: 3em;
     padding: 10em 1em 5em 1em;
     text-align: center;
+    @include responsive(md){
+        margin-top: 6em;
+    }
+    @include responsive(lg){
+        margin-top: 8em;
+    }
 
     span:nth-child(1){
         display: block;
         @extend %font-5;
-        color: $color2;
-        font-size: 17px;
+        font-size: 20px;
         @include responsive(xs){
             font-size: 20px;
         }
@@ -19,7 +26,6 @@
         }
     }
     span:nth-child(2){
-        color: $color3;
         display: block;
         font-size: 13px;
         @extend %font-3;
@@ -29,7 +35,7 @@
             padding: 0 3em;
         }
         @include responsive(sm){
-            font-size: 20px;
+            font-size: 16px;
             padding: 0 2em;
         }
     }
@@ -43,31 +49,31 @@
             font-size: 15px;
         }
         @include responsive(sm){
-            font-size: 18px;
+            font-size: 16px;
         }
-    }
-    a{
+    }   
+    a{  
         display: block;
-        margin-top: 10px;
-        color: $color1;
+        width: 230px;
+        margin: 3em auto;
+        border: solid #ffffff 2px;
+        background-color:$color2;
+        border-radius:2px;
+        box-shadow: inset 0 0 0 0 #ffffff;
+        transition: ease-out 0.3s;
+        font-size: 1rem;
+        color:white;
+        padding: .5em 1em .5em 1em;
         text-decoration: none;
-        display: block;
-        background-color: $color2;
-        width: 12em;
-        margin: auto;
-        @extend %font-3;
-        padding: 12px;
-        transition: all .5s ease;
-        border: 2px solid $color1;
-
-        &:hover,
-        &:active,
-        &:focus{
-            border: 2px solid $color2;
-            color: $color3;
-            background-color: $color1;
-            @extend %font-5;
+        @include responsive(md){
+            padding: .8em 1em .8em 1em;
         }
+        &:hover{
+            box-shadow: inset 300px 0 0 0 #ffffff;
+            border: solid #0E5F96 2px;
+            cursor: pointer;
+            color: $color3;
+            }
     }
 
 }

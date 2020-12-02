@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.fc1edbd7.chunk.css",
-    "main.js": "/static/js/main.a274897d.chunk.js",
-    "main.js.map": "/static/js/main.a274897d.chunk.js.map",
+    "main.js": "/static/js/main.02b053d0.chunk.js",
+    "main.js.map": "/static/js/main.02b053d0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.991503f7.js",
     "runtime-main.js.map": "/static/js/runtime-main.991503f7.js.map",
     "static/css/2.844e221e.chunk.css": "/static/css/2.844e221e.chunk.css",
@@ -14,11 +14,15 @@
     "static/css/2.844e221e.chunk.css.map": "/static/css/2.844e221e.chunk.css.map",
     "static/css/main.fc1edbd7.chunk.css.map": "/static/css/main.fc1edbd7.chunk.css.map",
     "static/js/2.589fe184.chunk.js.LICENSE.txt": "/static/js/2.589fe184.chunk.js.LICENSE.txt",
-    "static/media/Rw1.bc815708.png": "/static/media/Rw1.bc815708.png",
+    "static/media/Laper.in.03843c9d.png": "/static/media/Laper.in.03843c9d.png",
+    "static/media/Mockup1.ac77f8d2.png": "/static/media/Mockup1.ac77f8d2.png",
+    "static/media/Rivaldi-outdoor.de55b3c7.png": "/static/media/Rivaldi-outdoor.de55b3c7.png",
+    "static/media/Untitled.818972bc.png": "/static/media/Untitled.818972bc.png",
     "static/media/Footer.scss": "/static/media/bgfooter.437802c0.jpg",
     "static/media/call.512a5f8a.png": "/static/media/call.512a5f8a.png",
     "static/media/envelope.c444e176.png": "/static/media/envelope.c444e176.png",
     "static/media/frontenddev.109205e2.png": "/static/media/frontenddev.109205e2.png",
+    "static/media/indra-music.a4c57bfb.png": "/static/media/indra-music.a4c57bfb.png",
     "static/media/instagram.d024dd15.png": "/static/media/instagram.d024dd15.png",
     "static/media/linkedin.1383ce33.png": "/static/media/linkedin.1383ce33.png",
     "static/media/logo.e680d85b.png": "/static/media/logo.e680d85b.png",
@@ -32,6 +36,6 @@
     "static/css/2.844e221e.chunk.css",
     "static/js/2.589fe184.chunk.js",
     "static/css/main.fc1edbd7.chunk.css",
-    "static/js/main.a274897d.chunk.js"
+    "static/js/main.02b053d0.chunk.js"
   ]
 }

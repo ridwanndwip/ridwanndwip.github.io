@@ -17,9 +17,9 @@ const CardRw = ()=> {
 
 export default function RecentWorks(){
     return(
-        <div className="rw" id="portofolio">
-            <h1> My Recent Works </h1>
-            <h5> Here are a few web projects and design ui/ux I've worked. Want to see more? Email me. </h5>
+        <div className="rw" id="portofolio" data-aos="zoom-in">
+            <h1 data-aos="zoom-out-up" > My Recent Works </h1>
+            <h5 data-aos="zoom-out-up"> Here are a few web projects and design ui/ux I've worked. Want to see more? Email me. </h5>
             <div className="rw__card">
                 <CardRw/>
                 <CardRw/>

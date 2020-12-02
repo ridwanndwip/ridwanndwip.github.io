@@ -36,8 +36,8 @@ export default function Skills(){
     }, [tag])
 
     return(
-        <div className="Skills">
-            <div className="title">
+        <div className="Skills" id="skills">
+            <div className="title" data-aos="fade-up">
                 <h1> Skills </h1>
                 <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ad repellat modi amet voluptatem illo praesentium voluptatum consequuntur hic numquam.</h5>
             </div>
@@ -46,7 +46,7 @@ export default function Skills(){
                 <TagButton name="Design" handleSetTag={setTag} tagActive={ tag === 'Design' ? true : false}/>
                 <TagButton name="Other" handleSetTag={setTag} tagActive={ tag === 'Other' ? true : false}/>
             </div>
-            <div className="content">
+            <div className="content" data-aos="zoom-in">
                 {filteredImages.map(image => 
                 <div key={image.id} className="card">
                     <img src={`/images/${image.imageName}`} alt="" className="card__img"/>

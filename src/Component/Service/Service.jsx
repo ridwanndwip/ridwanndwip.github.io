@@ -65,8 +65,8 @@ const CardService = (props) => {
         return (
           <Fragment>
           <div className="bgservice" id="service">
-            <h1> My Service </h1>
-            <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi repellendus tempora, ducimus est soluta.</h5>
+            <h1 data-aos="zoom-in-up"> My Service </h1>
+            <h5 data-aos="zoom-in-up"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi repellendus tempora, ducimus est soluta.</h5>
           </div>
           <div className="Service">
             <Slider {...settings}>

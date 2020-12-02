@@ -21,11 +21,11 @@ export default function Footer(){
             <div className="footer">
                 <img src={logo} alt="Logo" className="footer__img"/>
                 <div className="footer__sosmed">
-                    <a href=""><img src={call} alt=""/></a>
-                    <a href=""><img src={instagram} alt=""/></a>
-                    <a href=""><img src={github} alt=""/></a>
-                    <a href=""><img src={linkedin} alt=""/></a>
-                    <a href=""><img src={email} alt=""/></a>
+                    <a href="https://linktr.ee/ridwanndwip" target="_blank"><img src={call} alt=""/></a>
+                    <a href="https://www.instagram.com/ridwanndwip/" target="_blank"><img src={instagram} alt=""/></a>
+                    <a href="https://github.com/ridwanndwip" target="_blank"><img src={github} alt=""/></a>
+                    <a href="https://www.linkedin.com/in/ridwandwip" target="_blank"><img src={linkedin} alt=""/></a>
+                    <a href="rmailto:uus.ridwandwip.rpl2@gmail.com" target="_blank"><img src={email} alt=""/></a>
                 </div>
                 <div className="footer__copyright">
                     <span> Copyright &copy;2020 </span>

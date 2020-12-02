@@ -2,6 +2,7 @@ import './About.scss'
 import aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
+// import cv from '../../Assets/doc/Cv.pdf'
 
 export default function About() {
     useEffect(() =>{
@@ -19,7 +20,7 @@ In making web design I often use ReactJs as a javascript framework and tailwindc
 I love making open source projects. It helps me learn many new things and add to my portfolio. besides that I also have the ability to work independently and in teams, but still comply with the work rules that have been determined.
             </p>
             <div className="about__getcv">
-                <a href="#"> Get My CV </a>
+                <a href="https://drive.google.com/file/d/1KTgAVYZUPnn7ZKkbZtaWQuciUeJ55COc/view" target="_blank"> Get My CV </a>
             </div>
         </div>
     )

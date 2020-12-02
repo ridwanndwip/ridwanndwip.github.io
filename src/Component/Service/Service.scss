@@ -38,10 +38,9 @@
     color: #0E5F96;
     background-color: white;
     transform: translateY(100%);
-    backface-visibility: hidden;
-    transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     transition: transform 0.4s, opacity 0.1s 0.3s;
-    transition: transform 0.4s, opacity 0.1s 0.3s, -webkit-transform 0.4s;
     &__title{
         margin-top: 0px;
         text-align: center;
@@ -59,9 +58,7 @@
   .Slide-up:hover .Overlay {
     opacity: 1;
     transform: translateY(0px);
-    transition: opacity 0.1s, -webkit-transform 0.4s;
     transition: transform 0.4s, opacity 0.1s;
-    transition: transform 0.4s, opacity 0.1s, -webkit-transform 0.4s;
   }
 
 .Service{

@@ -2,14 +2,11 @@ import {Fragment} from 'react'
 import './Footer.scss'
 import logo from '../../Assets/img/logo.png'
 
-import twitter from '../../Assets/img/twitter.png'
-import facebook from '../../Assets/img/facebook.png'
 import linkedin from '../../Assets/img/linkedin.png'
 import instagram from '../../Assets/img/instagram.png'
 import call from '../../Assets/img/call.png'
 import github from '../../Assets/img/github.png'
 import email from '../../Assets/img/envelope.png'
-import maps from '../../Assets/img/location.png'
 import reactjs from '../../Assets/img/reactjs.png'
 
 export default function Footer(){
@@ -21,11 +18,11 @@ export default function Footer(){
             <div className="footer">
                 <img src={logo} alt="Logo" className="footer__img"/>
                 <div className="footer__sosmed">
-                    <a href="https://linktr.ee/ridwanndwip" target="_blank"><img src={call} alt=""/></a>
-                    <a href="https://www.instagram.com/ridwanndwip/" target="_blank"><img src={instagram} alt=""/></a>
-                    <a href="https://github.com/ridwanndwip" target="_blank"><img src={github} alt=""/></a>
-                    <a href="https://www.linkedin.com/in/ridwandwip" target="_blank"><img src={linkedin} alt=""/></a>
-                    <a href="rmailto:uus.ridwandwip.rpl2@gmail.com" target="_blank"><img src={email} alt=""/></a>
+                    <a href="https://linktr.ee/ridwanndwip" target="_blank" rel="noreferrer"><img src={call} alt=""/></a>
+                    <a href="https://www.instagram.com/ridwanndwip/" target="_blank" rel="noreferrer"><img src={instagram} alt=""/></a>
+                    <a href="https://github.com/ridwanndwip" target="_blank" rel="noreferrer"><img src={github} alt=""/></a>
+                    <a href="https://www.linkedin.com/in/ridwandwip" target="_blank" rel="noreferrer"><img src={linkedin} alt=""/></a>
+                    <a href="rmailto:uus.ridwandwip.rpl2@gmail.com" target="_blank" rel="noreferrer"><img src={email} alt=""/></a>
                 </div>
                 <div className="footer__copyright">
                     <span> Copyright &copy;2020 </span>

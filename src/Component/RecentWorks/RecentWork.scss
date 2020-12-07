@@ -70,20 +70,49 @@
       }
       
       &__detail p{
-        font-size: 10px;
+        padding: 0 1em;
+        font-size: 13px;
         margin-bottom: 1em;
+        @include responsive(xs){
+          font-size: 15px;
+        }
+        @include responsive(sm){
+          font-size: 18px;
+        }
+        @include responsive(md){
+          font-size: 13px;
+        }
+        @include responsive(lg){
+          font-size: 10px;
+        }
+        @include responsive(xl){
+          font-size: 16px;
+        }
       }
       
-      &__detail a{
-        color: $color1;
-        background-color: rgb(5, 51, 119);
-        padding: .2em .5em .2em .5em;
-        width: 40%;
-        text-decoration: none;
-        font-size: 13px;
-        @extend %font-4
+      &__detail a{  
+          display: block;
+          width: 100px;
+          margin: auto;
+          background-color:$color2;
+          border-radius:2px;
+          transition: ease-out 0.3s;
+          font-size: 1rem;
+          color:white;
+          padding: .2em .5em .2em .5em;
+          text-decoration: none;
+
+          @include responsive(md){
+              padding: .3em .5em;
+          }
+
+          &:hover{
+              box-shadow: inset 300px 0 0 0 #ffffff;
+              cursor: pointer;
+              color: $color3;
+          }
       }
-    }
+}
   .fadeIn-bottom{
     top: 100%;
   }

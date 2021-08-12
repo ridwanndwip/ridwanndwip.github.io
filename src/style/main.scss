@@ -1,0 +1,11 @@
+@import 'var/color';
+@import 'var/med_query';
+
+// Component
+@import'style_comp/navbar';
+@import'style_comp/home';
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}

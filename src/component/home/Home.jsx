@@ -1,17 +1,21 @@
 import React from 'react';
-import '../../style/main.scss'
-import bgvideo from "../../img/20181014.mp4";
+import '../../style/main.scss';
+import Typewriter from 'typewriter-effect';
 
 class Home extends React.Component{
     render(){
         return(
-            <div class="bg-video-wrap">
-             
-                <div class="overlay">
-            </div>
-                <h1>Fullscreen video background
-                </h1>
-            </div>
+            <div className="hero" style={{ backgroundImage: "url(./img/bg7.png)" }}>
+                <div className="bg"></div>
+                <Typewriter className="hero_caption"
+                onInit={(typewriter) =>{
+                    typewriter
+                    .typeString("Hi There!")
+                    .pauseFor(1000)
+                    .start()
+                }}
+                />
+          </div>
         )
     }
 }

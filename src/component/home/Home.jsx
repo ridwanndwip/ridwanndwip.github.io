@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 class Home extends React.Component{
     render(){
         return(
-            <div className="hero" style={{ backgroundImage: "url(./img/bg7.png)" }}>
+            <div className="hero" style={{ backgroundImage: "url(./img/bg7-min.png)" }}>
                 <div className="bg"></div>
                 <Typewriter className="hero_caption"
                 onInit={(typewriter) =>{

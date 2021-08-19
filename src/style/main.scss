@@ -4,9 +4,29 @@
 // Component
 @import'style_comp/navbar';
 @import'style_comp/home';
+@import'style_comp/portofolio';
+
+body{
+    background: linear-gradient(-45deg, $color3, $color2, $color3, $color6);
+    background-size: 500em 500em;
+	animation: gradient 15s ease infinite;
+}
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

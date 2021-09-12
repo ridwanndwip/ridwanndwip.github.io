@@ -1,27 +1,21 @@
-import {
-  BrowserRouter,
-  Switch,
-  Route,
-} from 'react-router-dom';
 import Navbar from './component/navbar/Navbar';
 import Home from './component/home/Home';
-import About from './component/about/About';
-import Portofolio from './component/portofolio/Portofolio';
-import Note from './component/note/Note';
+import Me from './component/me/Me';
+import Work from './component/work/Work';
+import Blog from './component/blog/Blog';
+import Contact from './component/contact/Contact';
+import React from 'react';
 
 function App() {
   return (
-  <BrowserRouter>
-    <div className="App">
+    <React.Fragment>
       <Navbar/>
-      <Switch>
-        <Route path="/about" component={About}/>
-        <Route exact path="/" component={Home}/>
-        <Route path="/portofolio" component={Portofolio}/>
-        <Route path="/note" component={Note}/>
-      </Switch>
-  </div>
- </BrowserRouter>
- )}
+      <Home/>
+      <Me/>
+      <Work/>
+      <Blog/>
+      <Contact/>
+    </React.Fragment>
+  )}
 
 export default App;

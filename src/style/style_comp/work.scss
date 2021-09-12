@@ -1,0 +1,277 @@
+.container_work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+    @include responsive(m){
+      gap: 7em;
+    }
+    @include responsive(hd){
+      gap: 10em;
+    }
+
+    // Title
+    .title{
+        margin-top: 5em;
+        display:flex;
+        width:85%;
+        @include responsive(m){
+          width: 80%;
+        }
+        @include responsive(hd){
+          width: 70%;
+          margin-top: 10em;
+        }
+    
+        &_number{
+          font-size:34px;
+          position: absolute;
+          @include responsive(m){
+          font-size: 55px;
+          }
+          @include responsive(hd){
+          font-size: 72px;
+          }
+        }
+    
+        &_name{
+          display: flex;
+          flex-direction: row;
+          font-size:70px;
+          width:100%;
+          left:-65px;
+          @include responsive(m){
+          font-size: 110px;
+          }
+          @include responsive(hd){
+          font-size: 144px;
+          }
+          
+          &:before{
+          content: "";
+          width:50px;
+          border-bottom: 2px solid $color2;
+          margin: auto 10px auto 0;
+          @include responsive(m){
+          width:75px;
+          }
+          @include responsive(hd){
+          width:100px;
+          }
+          }
+          &:after{
+          content: "";
+          flex: 1 1;
+          border-bottom: 2px solid $color2;
+          margin: auto 0 auto 10px;
+          }
+        }
+      }
+
+
+      // Works
+      .works{
+        // background-color: $color4;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2em;
+        gap: 1.5em;
+        img{
+          width: 100%;
+          @include responsive(s){
+            width: 70%;
+          }
+          @include responsive(xl){
+            width: 50%;
+          }
+        }
+        p{
+          width: 100%;
+          text-align: center;
+          font-size: 15px;
+          @include responsive(s){
+            width: 70%;
+          }
+          @include responsive(xl){
+            width: 50%;
+          }
+        }
+        &_link{
+          display: flex;
+          gap: 14px;
+          span path{
+            fill: $color2;
+          }
+        }
+      }
+
+      // Cards Works
+      .cards_works{
+        width: 80%;
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        @include responsive(m){
+          grid-template-columns: repeat(2, auto);
+          width: 70%;
+        }
+        @include responsive(xl){
+          grid-template-columns: repeat(3, auto);
+          width: 60%;
+        }
+
+        .card {
+          background-color: $color4;
+          padding: 1.5em;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          gap: 1.5em;
+          align-items: flex-start;
+          h5{
+            font-size: 30px;
+          }
+          p{
+            font-size: 14px;
+            text-align: left;
+          }
+        }
+        
+      }
+
+
+}
+
+// .work{
+//     padding: 10em 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//     @include responsive(l){
+//     padding: 6em 0;
+//     }
+// }
+
+// // Appear
+// .container_appear{
+//     border-radius: 1em;
+//     // padding-top: 2em;
+//     width: 60%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     background-color: $color5;
+//     @include responsive(m){
+//     width: 65%;
+//     }
+//     @include responsive(s){
+//     width: 70%;
+//     }
+//     @include responsive(xs){
+//     width: 85%;
+//     }
+
+//     .work_appear{
+//         padding: 4em 0;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex-direction: column;
+//         img{
+//             width: 30%;
+//             @include responsive(xl){
+//             width: 35%;
+//             }
+//             @include responsive(l){
+//             width: 40%;
+//             }
+//             @include responsive(xs){
+//             width: 50%;
+//             }
+//         }
+//         &_name{
+//         margin-top: 1em;
+//         font-size: 40px;
+//         color: $color4;
+//         @include responsive(s){
+//         font-size: 30px;
+//         }
+//         }
+//         &_link{
+//             margin-top: 1em;
+//             display: flex;
+//             justify-content: center;
+//             gap: 1em;
+//             li{
+//                 list-style: none;
+//                 path{
+//                     fill: $color4;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// // Doc
+// .container_doc{
+//     width: 60%;
+
+//     .WorkDoc{
+//         display: flex;
+//         gap: 1em;
+//         grid-template-columns: auto auto auto;
+//         justify-content: space-between;
+
+//         &_Container{
+//             color: $color4;
+//             padding: 2em 1em 3em 0;
+//             border-radius: 5px;
+//             background-color: $color5;
+//             padding-left: 10px;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             &_Title{
+//             color: $color4;
+//             }
+//             &_Desc{
+//             color: $color4;
+//             }
+//             &_Details{
+//             color: $color4;
+//             }
+//         }
+
+//     }
+// }
+
+
+// // Divider
+// .h-divider {
+//     margin: auto;
+//     width: 80%;
+//     position: relative;
+//   }
+  
+//   .h-divider .shadow {
+//     overflow: hidden;
+//     height: 20px;
+//   }
+  
+//   .h-divider .shadow:after {
+//     content: '';
+//     display: block;
+//     margin: -25px auto 0;
+//     width: 100%;
+//     height: 25px;
+//     border-radius: 125px/12px;
+//     box-shadow: 0 0 8px $color1;
+//   }

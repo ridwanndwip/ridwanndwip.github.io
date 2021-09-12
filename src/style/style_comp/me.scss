@@ -1,0 +1,140 @@
+.container_me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+    @include responsive(m){
+      gap: 7em;
+    }
+    @include responsive(hd){
+      gap: 10em;
+    }
+
+    .title{
+      margin-top: 5em;
+      display:flex;
+      width:85%;
+      @include responsive(m){
+        width: 80%;
+      }
+      @include responsive(hd){
+        width: 70%;
+        margin-top: 10em;
+      }
+  
+      &_number{
+        font-size:34px;
+        position: absolute;
+        margin-left: 5px;
+        @include responsive(m){
+        font-size: 55px;
+        }
+        @include responsive(hd){
+        font-size: 72px;
+        }
+      }
+  
+      &_name{
+        display: flex;
+        flex-direction: row;
+        font-size:70px;
+        width:100%;
+        left:-65px;
+        @include responsive(m){
+        font-size: 110px;
+        }
+        @include responsive(hd){
+        font-size: 144px;
+        }
+        
+        &:before{
+        content: "";
+        width:50px;
+        border-bottom: 2px solid $color2;
+        margin: auto 10px auto 0;
+        @include responsive(m){
+        width:75px;
+        }
+        @include responsive(hd){
+        width:100px;
+        }
+        }
+        &:after{
+        content: "";
+        flex: 1 1;
+        border-bottom: 2px solid $color2;
+        margin: auto 0 auto 10px;
+        }
+      }
+  }
+
+}
+
+.about{
+      display: flex;
+      width: 75%;
+      gap: 3em;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @include responsive(m){
+        width: 60%;
+      }
+      @include responsive(xl){
+        flex-direction: row;
+      }
+
+    // Image Profil
+    img{
+      filter: grayscale(100%);
+      width: 100%;
+      @include responsive(xl){
+      width: 50%;
+      }
+    }
+
+    // Description
+    &_desc{
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      justify-content: center;
+      @include responsive(hd){
+        gap: 2.5em;
+      }
+      h4{
+        font-size: 36px;
+        font-weight: bold;
+        @include responsive(xl){
+        font-size: 40px;
+        }
+        @include responsive(hd){
+          font-size: 55px;
+          }
+      }
+      p{
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight:200;
+        @include responsive(xl){
+          font-size: 17px;
+        }
+        @include responsive(hd){
+          font-size: 20px;
+        }
+        
+      }
+      h5{
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-weight: 100;
+        @include responsive(xl){
+          font-size: 17px;
+        }
+        @include responsive(hd){
+          font-size: 24px;
+        }
+      }
+    }
+}

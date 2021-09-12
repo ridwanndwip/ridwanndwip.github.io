@@ -9,37 +9,37 @@ $full:1680px;
 // Mixin
 @mixin responsive ($breakpoint) {
     @if $breakpoint==xs {
-        @media (max-width: $extra-small) {
+        @media (min-width: $extra-small) {
             @content;
         }
     }
 
     @if $breakpoint==s {
-        @media (max-width: $small) {
+        @media (min-width: $small) {
             @content;
         }
     }
 
     @if $breakpoint==m {
-        @media (max-width: $medium) {
+        @media (min-width: $medium) {
             @content;
         }
     }
 
     @if $breakpoint==l {
-        @media (max-width: $large) {
+        @media (min-width: $large) {
             @content;
         }
     }
 
     @if $breakpoint==xl {
-        @media (max-width: $extra-large) {
+        @media (min-width: $extra-large) {
             @content;
         }
     }
 
     @if $breakpoint==hd {
-        @media (max-width: $full) {
+        @media (min-width: $full) {
             @content;
         }
     }

@@ -4,15 +4,14 @@
     justify-content: center;
     flex-direction: column;
     gap: 3em;
+    color: $color2;
     @include responsive(m){
-      gap: 7em;
-    }
-    @include responsive(hd){
-      gap: 10em;
+      gap: 5em;
     }
 
+    // Title Me
     .title{
-      margin-top: 5em;
+      margin-top: 7em;
       display:flex;
       width:85%;
       @include responsive(m){
@@ -26,7 +25,7 @@
       &_number{
         font-size:34px;
         position: absolute;
-        margin-left: 5px;
+        margin-left: 16px;
         @include responsive(m){
         font-size: 55px;
         }
@@ -67,74 +66,95 @@
         margin: auto 0 auto 10px;
         }
       }
-  }
+    }
 
-}
-
-.about{
+    // About
+    .about{
+      // background-color: yellow;
       display: flex;
       width: 75%;
       gap: 3em;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      // align-items: center;
+      // justify-content: center;
       @include responsive(m){
-        width: 60%;
+        width: 70%;
       }
       @include responsive(xl){
-        flex-direction: row;
+        flex-direction: column;
+        gap: 8em;
       }
 
-    // Image Profil
-    img{
-      filter: grayscale(100%);
-      width: 100%;
-      @include responsive(xl){
-      width: 50%;
-      }
-    }
 
-    // Description
-    &_desc{
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-      justify-content: center;
-      @include responsive(hd){
-        gap: 2.5em;
-      }
-      h4{
-        font-size: 36px;
-        font-weight: bold;
-        @include responsive(xl){
-        font-size: 40px;
+      // Me
+      .Ame{
+        display: flex;
+        justify-content: flex-start;
+        // background-color: red;
+
+        .me_title{
+          // background-color: yellowgreen;
         }
-        @include responsive(hd){
-          font-size: 55px;
+
+        .me{
+          // background-color: royalblue;
+          display: flex;
+          gap: 2em;
+          img{
+            width: 100%;
+            @include responsive(xl){
+            width: 50%;
+            }
           }
-      }
-      p{
-        font-size: 15px;
-        letter-spacing: 1px;
-        font-weight:200;
-        @include responsive(xl){
-          font-size: 17px;
-        }
-        @include responsive(hd){
-          font-size: 20px;
-        }
+          }
+        
+        .me_desc{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            justify-content: center;
+            // background-color: silver;
+            width: 40%;
+            @include responsive(hd){
+              gap: 2.5em;
+            }
+            h4{
+              font-size: 36px;
+              font-weight: bold;
+              @include responsive(xl){
+              font-size: 40px;
+              }
+              @include responsive(hd){
+                font-size: 55px;
+                }
+            }
+            p{
+              font-size: 15px;
+              letter-spacing: 1px;
+              font-weight:200;
+              @include responsive(xl){
+                font-size: 17px;
+              }
+              @include responsive(hd){
+                font-size: 20px;
+              }
+              
+            }
+          }
         
       }
-      h5{
-        letter-spacing: 1px;
-        font-size: 18px;
-        font-weight: 100;
-        @include responsive(xl){
-          font-size: 17px;
-        }
-        @include responsive(hd){
-          font-size: 24px;
+
+      // History
+      .container_history{
+        // background-color: rgb(218, 22, 0);
+        display: flex;
+        justify-content: flex-end;
+
+        .Ahistory{
+          // background-color: sienna;
         }
       }
-    }
+    
+  }
+
 }

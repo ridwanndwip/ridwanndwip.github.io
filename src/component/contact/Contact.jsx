@@ -4,7 +4,7 @@ import '../../style/main.scss'
 class Contact extends React.Component{
     render(){
         return(
-            <div className="container_contact">
+            <div className="container_contact" id="ask">
             <div class="title">
                 <h2 className="title_number"> 04 </h2>
                 <h4 className="title_name"> Ask </h4>

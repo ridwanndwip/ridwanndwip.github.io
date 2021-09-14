@@ -1,30 +1,26 @@
-nav{
+.navbar{
     z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    font-weight: lighter;
     position: fixed;
     top: 0;
     left: 0;
     margin: 0 auto;
     width: 100%;
-    padding: 1.2em 0;
+    padding: 1em 0;
+    transition: background-color .2s ease-in;
     @include responsive(s){
-        padding: 1.5em 0;
-        font-size: 24px;
+        padding: 1.6em 0;
+        font-size: 22px;
     }
     
     @include responsive(l){
-        font-size: 25px;
+        font-size: 26px;
     }
 
     @include responsive(xl){
-        padding: 2em 0;
-    }
-
-    @include responsive(hd){
         background-color: $color1;
     }
 
@@ -35,13 +31,28 @@ nav{
     display: flex;
     padding: 0 1em;
     width: 100%;
-    @include responsive(l){
-        padding: 0;
+        @include responsive(l){
+            padding: 0;
+        }
+        
+        // Nav List
+        &_list{
+            list-style: none;
+            cursor: pointer;
+            color: $color2;
+            letter-spacing: 3px;
+            @include responsive(xl){
+                letter-spacing: 8px;
+                transition: all .5s cubic-bezier(0.11, 0.7, 0, 1);
+                &:hover{
+                transform: translateY(-10px);
+                color: $color5;
+                }
+            }
+        }
     }
-    
-    // Nav List
-    &_list{
-        list-style: none;
-    }
-    }
+}
+
+.navbar.active{
+    background-color: $color1;
 }

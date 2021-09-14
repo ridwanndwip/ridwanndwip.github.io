@@ -4,7 +4,7 @@ import '../../style/main.scss'
 class Blog extends React.Component{
     render(){
         return(
-        <div className="container_blog">
+        <div className="container_blog" id="blog">
             
             {/* Title */}
             <div class="title">

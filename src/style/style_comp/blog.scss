@@ -5,15 +5,12 @@
     flex-direction: column;
     gap: 3em;
     @include responsive(m){
-    gap: 7em;
-    }
-    @include responsive(hd){
-    gap: 10em;
+    gap: 5em;
     }
 
     // Title
     .title{
-        margin-top: 5em;
+        margin-top: 7em;
         display:flex;
         width:85%;
         @include responsive(m){

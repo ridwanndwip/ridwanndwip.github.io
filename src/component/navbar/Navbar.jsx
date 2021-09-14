@@ -1,22 +1,39 @@
 
-import React,{Fragment} from 'react';
+import React,{useState} from 'react';
 import '../../style/main.scss'
-import {Component} from 'react';
-// import logo from '../../img/logo.png'
+import {Link} from 'react-scroll';
 
-export default class Navbar extends Component {
-    render(){
+const Url = (props) => {
+    return(
+        <li className="nav_menu_list"> 
+            <Link to={props.to} smooth={true} duration={1300}> {props.name} </Link>
+        </li>
+    )
+}
+
+const Navbar = () =>{
+    const[navbar,setNavbar] = useState(false);
+
+    const changeBackground = () =>{
+        if(window.scrollY >= 150){
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    };
+
+    window.addEventListener('scroll',changeBackground);
         return(
-            <Fragment>
-                <nav>
-                    <ul className="nav_menu">
-                        <li className="nav_menu_list"> Me </li>
-                        <li className="nav_menu_list"> Work </li>
-                        <li className="nav_menu_list"> Blog </li>
-                        <li className="nav_menu_list"> Ask </li>
+                <nav className={navbar ? 'navbar active' : 'navbar'}>
+                    <ul className="nav_menu" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <Url to="me" name="Me" />
+                        <Url to="works" name="Works" />
+                        <Url to="blog" name="Blog" />
+                        <Url to="ask" name="Ask" />
                     </ul>
                 </nav>
-            </Fragment>
     )
-}}
+}
+
+export default Navbar;
 

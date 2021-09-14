@@ -1,4 +1,4 @@
-import react, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import DotLoader from "react-spinners/DotLoader";
 import Navbar from './component/navbar/Navbar';
 import Home from './component/home/Home';

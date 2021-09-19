@@ -15,7 +15,7 @@ const Navbar = () =>{
     const[navbar,setNavbar] = useState(false);
 
     const changeBackground = () =>{
-        if(window.scrollY >= 150){
+        if(window.scrollY >= 160){
             setNavbar(true);
         } else {
             setNavbar(false);
@@ -27,7 +27,7 @@ const Navbar = () =>{
                 <nav className={navbar ? 'navbar active' : 'navbar'}>
                     <ul className="nav_menu" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                         <Url to="me" name="Me" />
-                        <Url to="works" name="Works" />
+                        <Url to="works" name="Work" />
                         <Url to="blog" name="Blog" />
                         <Url to="ask" name="Ask" />
                     </ul>

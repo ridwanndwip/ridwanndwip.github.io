@@ -23,6 +23,34 @@
         justify-content: center;
         align-items: center;
 
+        h1{ 
+            font-size: 40px;
+            color: $color1;
+            font-weight: lighter;
+            position: relative;
+            &::after{
+                top: 49%;
+                left: 0;
+                position: absolute;
+                content: '';
+                height: 2px;
+                width: 100%;
+                background-color: $color1;
+            }
+            @include responsive(s){
+                font-size: 60px;
+            }
+            @include responsive(l){
+                font-size: 100px;
+            }
+            @include responsive(xl){
+                font-size: 100px;
+            }
+            @include responsive (hd){
+                font-size: 150px;
+            }
+        }
+
         @include responsive(xl){
             background-image: url(../../img/bg-header3.png);
             height: 100vh;
@@ -41,7 +69,6 @@
     width: 1em;
 	height: 3.125em;
 	transform: translateX(-50%) scale(2);
-	// z-index: 99999;
     @include responsive(hd){
         top: 100%;
     }
@@ -49,16 +76,16 @@
 
 .icon-arrows::after,
 .icon-arrows::before {
-  content: '';
+content: '';
 }
 .icon-arrows span,
 .icon-arrows::after,
 .icon-arrows::before {
 	display: block;
-	width: 0.715em;
-	height: 0.715em;
-	border-right: 1px solid rgba(255,255,255,.8);
-	border-bottom: 1px solid rgba(255,255,255,.8);
+	width: 0.515em;
+	height: 0.515em;
+	border-right: 1px solid $color1;
+	border-bottom: 1px solid $color1;
 	margin: 0 0 0.125em 0.315em;
 	transform: rotate(45deg);
     animation: mouse-scroll 1s infinite;
@@ -66,7 +93,7 @@
 }
 
 .icon-arrows::before {
-	margin-top: 0.315em;
+	margin-top: 0.615em;
 	animation-delay: .1s;
 }
 

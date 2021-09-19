@@ -4,258 +4,137 @@
     justify-content: center;
     flex-direction: column;
     gap: 3em;
+    color: $color2;
     @include responsive(m){
-    gap: 5em;
+      gap: 6em;
     }
-
-    // Title
-    .title{
-        margin-top: 7em;
-        display:flex;
-        width:85%;
-        @include responsive(m){
-        width: 80%;
-        }
-        @include responsive(hd){
-        width: 70%;
-        margin-top: 10em;
-        }
-    
-        &_number{
-        font-size:34px;
-        position: absolute;
-        @include responsive(m){
-        font-size: 55px;
-        }
-        @include responsive(hd){
-        font-size: 72px;
-        }
-        }
-    
-        &_name{
-        display: flex;
-        flex-direction: row;
-        font-size:70px;
-        width:100%;
-        left:-65px;
-        @include responsive(m){
-        font-size: 110px;
-        }
-        @include responsive(hd){
-        font-size: 144px;
-        }
-        
-        &:before{
-        content: "";
-        width:50px;
-        border-bottom: 2px solid $color2;
-        margin: auto 10px auto 0;
-        @include responsive(m){
-        width:75px;
-        }
-        @include responsive(hd){
-        width:100px;
-        }
-        }
-        &:after{
-        content: "";
-        flex: 1 1;
-        border-bottom: 2px solid $color2;
-        margin: auto 0 auto 10px;
-        }
-        }
-    }
-
 
     // Blog
     .blog{
-        width: 70%;
-        // background-color: aqua;
-        @include responsive(l){
+        width: 75%;
+        @include responsive(s){
+            width: 60%;
+          }
+          @include responsive(l){
             width: 50%;
-        }
+          }
+          @include responsive(xl){
+            width: 40%;
+          }
 
-        // Timeline Container
-        .timeline_blog{
-            @include responsive(m) {
-                .timeline-info,
-                .timeline-marker,
-                .timeline-content,
-                .period .timeline-info {
-                    display: table-cell;
-                    vertical-align: top;
-                }
-                .timeline-marker {
-                    position: relative;
-                }
-                .timeline-content {
-                    padding-left: 20px;
-                }
-                .timeline-info {
-                    padding-right: 20px;
-                }
-                .period .timeline-title {
-                    position: relative;
-                    left: -45px;
+        .container_timeline {
+            list-style: none;
+
+            .period {
+                border-top: 1px solid $color2;
+                border-bottom: 1px solid $color2;
+                padding: 2em 0;
+                margin: 2em 0;
+                h6{
+                    font-size: 30px;
                 }
             }
-            
-            @include responsive(l) {
-                &,
-                .blog_item,
-                .timeline-info,
-                .timeline-marker,
-                .timeline-content {
-                    display: block;
-                    margin: 0;
-                    padding: 0;
+
+            .timeline-item {
+                padding-left: 30px;
+                position: relative;
+                &:last-child {
+                    padding-bottom: 0;
                 }
-                .blog_item {
-                    padding-bottom: 40px;
-                    overflow: hidden;
+
+                .timeline-title {
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: .2em;
                 }
+
                 .timeline-marker {
                     position: absolute;
-                    left: 51%;
-                    // margin-left: -7.5px;
+                    top: 0; bottom: 0; left: 0;
+                    width: 15px; 
+                    &:before {
+                        background: $color2;
+                        border: 3px solid transparent;
+                        border-radius: 100%;
+                        content: "";
+                        display: block;
+                        height: 11px;
+                        position: absolute;
+                        top: 4px; left: -2px;
+                        width: 11px;
+                        transition: all .5s cubic-bezier(0.11, 0.7, 0, 1);
+                    }
+                    &:after {
+                        content: "";
+                        width: 1px;
+                        background: $color2;
+                        display: block;
+                        position: absolute;
+                        top: 25px; bottom: 0; left: 6px;
+                    }
+                    .timeline-item:last-child &:after {
+                        content: none;
+                    }
                 }
-                .timeline-info,
-                .timeline-content {
-                    width: 45%;
-                    // background-color: blue;
-                }
-                .blog_item:nth-child(odd) .timeline-info {
-                    float: left;
-                    text-align: right;
-                    padding-right: 30px;
-                }
-                .blog_item:nth-child(odd) .timeline-content {
-                    float: right;
-                    text-align: left;
-                    padding-left: 10px;
-                }    
-                .blog_item:nth-child(even) .timeline-info {
-                    float: right;
-                    text-align: left;
-                    padding-left: 10px;
-                }
-                .blog_item:nth-child(even) .timeline-content {
-                    float: left;
-                    text-align: right;
-                    padding-right: 30px;
-                }
-                .blog_item.period .timeline-content {
-                    float: none;
-                    padding: 0;
-                    width: 100%;
-                    text-align: center;
-                }
-                .blog_item.period {
-                    padding: 50px 0 90px;
-                }
-                .period .timeline-marker:after {
-                    height: 30px;
-                    bottom: 0;
-                    top: auto;
-                }
-                .period .timeline-title {
-                    left: auto;
-                }
-            }   
-
-        // Item List Blog
-        .blog_item{
-            padding-left: 30px;
-            position: relative;
-            list-style: none;
-            &:hover .timeline-marker:before{
-                background: transparent;
-                border: 3px solid $color2;
-            }
-    
-                // Date Post
-                .timeline-info {
-                font-size: 10px;
-                font-weight: 100;
-                letter-spacing: 3px;
-                margin: 0 0 .5em 0;
-                text-transform: uppercase;
-                white-space: nowrap;
-                padding-top: 7px;
-                }
-    
-    
-                // Content Timeline
+            
                 .timeline-content {
                     padding-bottom: 40px;
+                    font-size: 15px;
+                    color: $color2;
                     p:last-child {
                         margin-bottom: 0;
+                        font-weight: lighter;
+                    }
+                    .timeline-date{
+                        display: block;
+                        position: relative;
+                        &::before{
+                            top: 46.7%;
+                            left: 100px;
+                            position: absolute;
+                            content: '';
+                            height: 1px;
+                            width: 10px;
+                            background-color: $color2;
+                        }
+                    }
+                    .read_more{
+                        display: block;
+                        margin-top: .5em;
+                        a{  
+                            color: $color2;
+                            text-decoration:none;
+                            position: relative;
+                            &::before{
+                                top: 80%;
+                                left: 0;
+                                position: absolute;
+                                content: '';
+                                height: 1px;
+                                width: 73px;
+                                background-color: $color2;
+                            }
+                        }
                     }
                 }
             }
         }
     }
-}
 
-.timeline-marker {
-    position: absolute;
-    top: 0; bottom: 0; left: 0;
-    width: 15px;
-    &:before {
-        background: $color2;
-        border: 3px solid transparent;
-        border-radius: 100%;
-        content: "";
-        display: block;
-        height: 10px;
-        position: absolute;
-        top: 4px; left: 0;
-        width: 10px;
-        transition: background 0.3s ease-in-out,
-        border 0.3s ease-in-out;
+    .timeline-item:not(.period):hover .timeline-marker:before {
+        background: transparent;
+        border: 3px solid $color2;
     }
-    &:after {
-        content: "";
-        width: 3px;
-        background: $color2;
-        display: block;
-        position: absolute;
-        top: 24px; bottom: 0; left: 6px;
-    }
-    .blog_item:last-child &:after {
-        content: none;
-    }
-}
 
-.period {
-    padding: 0;
-    .timeline-info {
-        display: none;
-    }
-    .timeline-marker {
-        &:before {
-            background: transparent;
-            content: "";
-            width: 15px;
-            height: auto;
-            border: none;
-            border-radius: 0;
-            top: 0;
-            bottom: 30px;
-            position: absolute;
-            border-top: 3px solid $color2;
-            border-bottom: 3px solid $color2;
+    .marker-outline {
+        .timeline-marker {
+            &:before {
+                background: transparent;
+                border-color: $color2;
+            }
         }
-        &:after {
-            content: "";
-            height: 32px;
-            top: auto;
+        .timeline-item:hover .timeline-marker:before {
+        background: $color2;
+            }
         }
-    }
-    .timeline-content {
-        padding: 40px 0 70px;
-    }
-    .timeline-title {
-        margin: 0;
-    }
 }

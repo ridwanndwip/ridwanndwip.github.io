@@ -6,155 +6,170 @@
     gap: 3em;
     color: $color2;
     @include responsive(m){
-      gap: 5em;
-    }
-
-    // Title Me
-    .title{
-      margin-top: 7em;
-      display:flex;
-      width:85%;
-      @include responsive(m){
-        width: 80%;
-      }
-      @include responsive(hd){
-        width: 70%;
-        margin-top: 10em;
-      }
-  
-      &_number{
-        font-size:34px;
-        position: absolute;
-        margin-left: 16px;
-        @include responsive(m){
-        font-size: 55px;
-        }
-        @include responsive(hd){
-        font-size: 72px;
-        }
-      }
-  
-      &_name{
-        display: flex;
-        flex-direction: row;
-        font-size:70px;
-        width:100%;
-        left:-65px;
-        @include responsive(m){
-        font-size: 110px;
-        }
-        @include responsive(hd){
-        font-size: 144px;
-        }
-        
-        &:before{
-        content: "";
-        width:50px;
-        border-bottom: 2px solid $color2;
-        margin: auto 10px auto 0;
-        @include responsive(m){
-        width:75px;
-        }
-        @include responsive(hd){
-        width:100px;
-        }
-        }
-        &:after{
-        content: "";
-        flex: 1 1;
-        border-bottom: 2px solid $color2;
-        margin: auto 0 auto 10px;
-        }
-      }
+      gap: 6em;
     }
 
     // About
     .about{
-      // background-color: yellow;
       display: flex;
       width: 75%;
       gap: 3em;
       flex-direction: column;
-      // align-items: center;
-      // justify-content: center;
-      @include responsive(m){
-        width: 70%;
+      @include responsive(s){
+        width: 65%;
+      }
+      @include responsive(l){
+        width: 60%;
       }
       @include responsive(xl){
-        flex-direction: column;
+        width: 70%;
+        gap: 6em;
+      }
+      @include responsive(hd){
         gap: 8em;
       }
-
 
       // Me
       .Ame{
         display: flex;
         justify-content: flex-start;
-        // background-color: red;
+        flex-direction: column;
+        gap: 1em;
 
         .me_title{
-          // background-color: yellowgreen;
+          font-size: 18px;
+          text-align: right;
+          @include responsive(m){
+            font-size: 20px;
+          }
+          @include responsive(xl){
+            text-align: left;
+            font-size: 22px;
+          }
         }
 
         .me{
-          // background-color: royalblue;
           display: flex;
-          gap: 2em;
-          img{
+          gap: 1em;
+          flex-direction: column;
+          @include responsive (xl){
+            flex-direction: row;
+            width: 85%;
+            gap: 2em;
+          }
+          
+          // Image Profil
+          .me_pict{
             width: 100%;
-            @include responsive(xl){
-            width: 50%;
+            @include responsive (xl){
+              min-width: 50%;
             }
           }
-          }
-        
-        .me_desc{
+
+          // Introduce
+          .me_desc{
             display: flex;
             flex-direction: column;
-            gap: 1em;
             justify-content: center;
-            // background-color: silver;
-            width: 40%;
+            gap: .5em;
             @include responsive(hd){
-              gap: 2.5em;
+              gap: 1em;
             }
-            h4{
-              font-size: 36px;
+            span{
+              font-size: 30px;
               font-weight: bold;
               @include responsive(xl){
-              font-size: 40px;
+              font-size: 50px;
               }
               @include responsive(hd){
-                font-size: 55px;
+                font-size: 70px;
                 }
             }
             p{
               font-size: 15px;
-              letter-spacing: 1px;
-              font-weight:200;
-              @include responsive(xl){
-                font-size: 17px;
+              text-align: justify;
+              @include responsive(m){
+                font-size: 20px;
               }
               @include responsive(hd){
-                font-size: 20px;
+                font-size: 23px;
               }
               
             }
           }
+
+        }
         
       }
 
       // History
       .container_history{
-        // background-color: rgb(218, 22, 0);
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
+        @include responsive(xl){
+          justify-content: flex-end;
+        }
 
         .Ahistory{
-          // background-color: sienna;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+          @include responsive(xl){
+            width: 65%;
+          }
+
+          .history_title{
+            font-size: 18px;
+            @include responsive(m){
+              font-size: 20px;
+            }
+            @include responsive(xl){
+              text-align: right;
+              font-size: 22px;
+            }
+          }
+
+
+          .history{
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+            .history_list{
+              display: flex;
+              justify-content: space-between;
+              padding: 10px 10px;
+              align-items: center;
+              @include responsive(xl){
+                padding: 15px 15px;
+              }
+              
+              span:first-child{
+                font-size: 12px;
+                @include responsive(m){
+                  font-size: 15px;
+                }
+                @include responsive(xl){
+                  font-size: 18px;
+                }
+              }
+              span:nth-child(2){
+                font-weight: bold;
+                font-size: 13px;
+                @include responsive(m){
+                  font-size: 20px;
+                }
+              }
+            }
+            .history_list:first-child,
+            .history_list:nth-child(2),
+            .history_list:nth-child(3){
+              border-bottom: 1px solid $color2;
+            }
+
+          }
         }
       }
     
   }
-
 }

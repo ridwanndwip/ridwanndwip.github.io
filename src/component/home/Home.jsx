@@ -7,6 +7,7 @@ class Home extends React.Component{
         return(
             <div className="Hero">
                 <div className="Hero_desktop">
+                    <h1> Personal Portofolio </h1>
                     <div class="icon-scroll">
                         <div class="icon-arrows">
                             <span></span>

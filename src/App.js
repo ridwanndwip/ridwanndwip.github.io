@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import DotLoader from "react-spinners/DotLoader";
+import PropagateLoader from "react-spinners/PropagateLoader";
 import Navbar from './component/navbar/Navbar';
 import Home from './component/home/Home';
 import Me from './component/me/Me';
@@ -16,13 +16,13 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 4000)
+    }, 3000)
   }, [])
   return (
     <div className={loading ? 'App' : 'noneApp'}>
       { 
         loading ?
-        <DotLoader color={"#ffffff"} loading={loading} size={70} />
+        <PropagateLoader color={"#323232"} loading={loading} size={10} />
         :
         <div>
           <Navbar/>

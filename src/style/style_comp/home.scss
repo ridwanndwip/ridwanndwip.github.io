@@ -1,5 +1,5 @@
 .Hero{
-    background-image: url(../../img/bg-header22.png);
+    background-image: url(../../img/bg-header2.png);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -7,6 +7,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-attachment: fixed;
     @include responsive(xl){
         background-image: none;
         padding-top: 8em;
@@ -24,19 +25,21 @@
         align-items: center;
 
         h1{ 
-            font-size: 40px;
+            font-family: 'Mr De Haviland', cursive;
+            font-size: 70px;
             color: $color1;
             font-weight: lighter;
             position: relative;
-            &::after{
-                top: 49%;
-                left: 0;
-                position: absolute;
-                content: '';
-                height: 2px;
-                width: 100%;
-                background-color: $color1;
-            }
+            // letter-spacing: 10px;
+            // &::after{
+            //     top: 49%;
+            //     left: 0;
+            //     position: absolute;
+            //     content: '';
+            //     height: 2px;
+            //     width: 100%;
+            //     background-color: $color2;
+            // }
             @include responsive(s){
                 font-size: 60px;
             }
@@ -52,7 +55,7 @@
         }
 
         @include responsive(xl){
-            background-image: url(../../img/bg-header3.png);
+            background-image: url(../../img/bg-header.png);
             height: 100vh;
             background-size: cover;
             background-position: center;

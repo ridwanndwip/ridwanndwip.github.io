@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 import '../../style/main.scss'
-import me from './../../img/me2.png'
+import me from './../../img/me.jpg'
 import aos from 'aos'
 import 'aos/dist/aos.css'
 import Title from '../title/Title'

@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.0958aadf.chunk.css",
-    "main.js": "/static/js/main.2f23a643.chunk.js",
-    "main.js.map": "/static/js/main.2f23a643.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.208e369c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.208e369c.js.map",
+    "main.css": "/static/css/main.fea48e36.chunk.css",
+    "main.js": "/static/js/main.20395a3d.chunk.js",
+    "main.js.map": "/static/js/main.20395a3d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9cceeb4c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9cceeb4c.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.170d3228.chunk.js": "/static/js/2.170d3228.chunk.js",
-    "static/js/2.170d3228.chunk.js.map": "/static/js/2.170d3228.chunk.js.map",
-    "static/js/3.3b8636cf.chunk.js": "/static/js/3.3b8636cf.chunk.js",
-    "static/js/3.3b8636cf.chunk.js.map": "/static/js/3.3b8636cf.chunk.js.map",
+    "static/js/2.ddb777e4.chunk.js": "/static/js/2.ddb777e4.chunk.js",
+    "static/js/2.ddb777e4.chunk.js.map": "/static/js/2.ddb777e4.chunk.js.map",
+    "static/js/3.d4fdf6a5.chunk.js": "/static/js/3.d4fdf6a5.chunk.js",
+    "static/js/3.d4fdf6a5.chunk.js.map": "/static/js/3.d4fdf6a5.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.0958aadf.chunk.css.map": "/static/css/main.0958aadf.chunk.css.map",
-    "static/js/2.170d3228.chunk.js.LICENSE.txt": "/static/js/2.170d3228.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/static/media/bg-header3.6648a6a0.png",
-    "static/media/me2.a1f1366d.png": "/static/media/me2.a1f1366d.png",
+    "static/css/main.fea48e36.chunk.css.map": "/static/css/main.fea48e36.chunk.css.map",
+    "static/js/2.ddb777e4.chunk.js.LICENSE.txt": "/static/js/2.ddb777e4.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/static/media/bg-header2.a2b722db.png",
+    "static/media/me.81362c44.jpg": "/static/media/me.81362c44.jpg",
     "static/media/square_darl_test2.eb83290b.png": "/static/media/square_darl_test2.eb83290b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.208e369c.js",
+    "static/js/runtime-main.9cceeb4c.js",
     "static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.170d3228.chunk.js",
-    "static/css/main.0958aadf.chunk.css",
-    "static/js/main.2f23a643.chunk.js"
+    "static/js/2.ddb777e4.chunk.js",
+    "static/css/main.fea48e36.chunk.css",
+    "static/js/main.20395a3d.chunk.js"
   ]
 }
